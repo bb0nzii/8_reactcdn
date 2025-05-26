@@ -14,7 +14,8 @@
       }
       const myElement = <Car brand="BBO"/>;
       const container = document.getElementById('jsx');
-      const root = ReactDOM
+      const root = ReactDOM.createRoot(container);
+      root.render(myElement);
     </script>
 
   </body>
