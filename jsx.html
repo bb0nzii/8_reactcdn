@@ -7,16 +7,34 @@
   </head>
   <body>
 
-    <div id="jsx"></div>
-    <script type="text/babel">
-      function Car(props){
-        return <h1 className="my-3">I am a {props.brand} !</h1>
-      }
-      const myElement = <Car brand="BBO"/>;
-      const container = document.getElementById('jsx');
-      const root = ReactDOM.createRoot(container);
-      root.render(myElement);
-    </script>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 border">
+          <div id="jsx"></div>
+          <script type="text/babel">
+            function Car(props){
+              return <h1 className="my-3">I am a {props.brand} !</h1>
+            }
+          const myElement = <Car brand="BBO"/>;
+          const container = document.getElementById('jsx');
+          const root = ReactDOM.createRoot(container);
+          root.render(myElement);
+          </script>
+        </div>
+        
+        <div class="col-md-4 border">
+          <h1 className="my-3">jsx표현식</h1>
+          <div id="ex"></div>
+          <script type="text/babel">
+            const myNumber = <h1>React는 간단한 수식은 표현식으로 가능하고 예시로 {5+5} 입니다</h1>
+          </script>
+        </div>
+        
+        <div class="col-md-4 border">
+        </div>
+      </div>
+    </div>
+
 
   </body>
 </html>
