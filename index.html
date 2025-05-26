@@ -8,6 +8,13 @@
   <body>
 
     <div id="mydiv"></div>
+    <script type="text/babel">
+      const hello = () => {
+        return <h1>hello world</h1>
+      }
+      const container = document.getElementById('mydiv');
+      const root = ReactDom.createRoot(container);
+    </script>
 
   </body>
 </html>
